@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">采购入库打印</string>
+
+    <string name="printer1">单张打印</string>
+    <string name="printer2">打印</string>
+    <string name="printer3">返回</string>
+    <string name="text1">单据:</string>
+    <string name="name1">供应商:</string>
+    <string name="ok">确认</string>
+    <string name="no">退出</string>
+
+    <string name="name">供应商:</string>
+    <string name="znum_name">单据:</string>
+    <string name="werks_name">工厂:</string>
+    <string name="matnr_name">物料:</string>
+    <string name="zlichn_name">版本:</string>
+    <string name="lgmng_name">交货单数量:</string>
+    <string name="Zmenge_name">未清数量:</string>
+    <string name="date_name">生产日期:</string>
+    <string name="Zproddate">入库日期:</string>
+    <string name="erfmgl_name">托盘标准数量:</string>
+    <string name="mark_name">标签数量:</string>
+    <string name="Qcnum">车牌号:</string>
+
+    <string name="printer">进入打印</string>
+    <string name="back_home">返回</string>
+    <string name="exit">退出</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <solid
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:color="#404040" />
+
+    <stroke
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:width="1dp"
+        android:color="#BBBBBB" />
+
+    <corners
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:radius="6dp" />
+
+    <padding
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+</shape>  

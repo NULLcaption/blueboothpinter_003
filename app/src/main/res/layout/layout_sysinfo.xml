@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/matnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="物料:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/maktx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="物料描述:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/werks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="工厂:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/znum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="单据:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp" />
+
+        <TextView
+            android:id="@+id/zlichn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="版本号:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/znum"
+            android:layout_alignStart="@+id/znum"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="100dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/lgmng_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="交货数量:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/lgmng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0.00"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="65dp" />
+        <TextView
+            android:id="@+id/Zmenge_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="未清数量:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="120dp" />
+        <TextView
+            android:id="@+id/Zmenge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0.00"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@+id/Zmenge_name"
+            android:layout_alignStart="@+id/Zmenge_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="175dp" />
+
+        <TextView
+            android:id="@+id/Meins_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="单位:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/Zmenge"
+            android:layout_alignStart="@+id/Zmenge"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="60dp" />
+        <TextView
+            android:id="@+id/Meins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="箱"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/Meins_name"
+            android:layout_alignStart="@+id/Meins_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/erfmgl_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="标准托盘数量:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/erfmgl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0.00"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="95dp" />
+
+
+        <TextView
+            android:id="@+id/erfme_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="托盘单位:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/erfmgl"
+            android:layout_alignStart="@+id/erfmgl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="60dp" />
+        <TextView
+            android:id="@+id/erfme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="箱"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/erfme_name"
+            android:layout_alignStart="@+id/erfme_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="55dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
