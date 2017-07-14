@@ -6,6 +6,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -73,6 +74,7 @@ public class BlueBoothPinterActivity extends AppCompatActivity {
      */
     private void initView() {
         znum = (EditText) findViewById(R.id.znum);//单据号
+        znum.setInputType(InputType.TYPE_NULL);
         EName1 = (TextView) findViewById(R.id.EName1);//供应商名称
         zslipsListView = (ListView) findViewById(R.id.lv_sysinfo);//详单列表
 

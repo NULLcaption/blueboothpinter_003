@@ -7,6 +7,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -84,8 +85,11 @@ public class BlueBoothPinterDetailActivity extends AppCompatActivity {
         Zproddate = (EditText) findViewById(R.id.Zproddate);//入库日期
         Zproddate.setOnClickListener(BtnClicked);
         erfmgl = (TextView) findViewById(R.id.erfmgl);//托盘标准数量
+        erfmgl.setInputType(InputType.TYPE_NULL);
         mark = (EditText) findViewById(R.id.mark);//标签数
+        mark.setInputType(InputType.TYPE_NULL);
         Qcnum = (EditText) findViewById(R.id.Qcnum);//车牌号
+        Qcnum.setInputType(InputType.TYPE_NULL);
         IZipcode = (TextView) findViewById(R.id.IZipcode);
         Charg = (TextView) findViewById(R.id.Charg);
 
