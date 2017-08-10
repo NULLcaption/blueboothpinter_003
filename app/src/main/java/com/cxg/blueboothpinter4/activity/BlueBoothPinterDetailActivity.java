@@ -155,16 +155,16 @@ public class BlueBoothPinterDetailActivity extends AppCompatActivity {
             public void handle(String time) { // 回调接口，获得选中的时间
                 Zproddate.setText(time.split(" ")[0]);
             }
-        }, "2010-01-01 00:00", now); // 初始化日期格式请用：yyyy-MM-dd HH:mm，否则不能正常运行
+        }, "2010-01-01 00:00", "2099-01-01 00:00"); // 初始化日期格式请用：yyyy-MM-dd HH:mm，否则不能正常运行
         zproddateDatePicker.showSpecificTime(false); // 不显示时和分false
-        zproddateDatePicker.setIsLoop(false); // 不允许循环滚动*/
+        zproddateDatePicker.setIsLoop(true); // 不允许循环滚动*/
 
         zgrdateDatePicker = new DatePicker(this, new DatePicker.ResultHandler() {
             @Override
             public void handle(String time) { // 回调接口，获得选中的时间
                 Zgrdate.setText(time.split(" ")[0]);
             }
-        }, "2010-01-01 00:00", now); // 初始化日期格式请用：yyyy-MM-dd HH:mm，否则不能正常运行
+        }, "2010-01-01 00:00", "2099-01-01 00:00"); // 初始化日期格式请用：yyyy-MM-dd HH:mm，否则不能正常运行
         zgrdateDatePicker.showSpecificTime(false); // 显示时和分true
         zgrdateDatePicker.setIsLoop(true); // 允许循环滚动
     }
